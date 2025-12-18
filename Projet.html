@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Générateur de Nuage de Mots</title>
+        
+        <link rel="stylesheet" href="Projet.css"> 
+
+        <script src="Projet.js" defer></script>
+    </head>
+    <body>
+
+        <h2>Analyseur de Texte</h2>
+
+        <form>
+            <textarea id="texte" name="contenu" placeholder="Collez votre texte ici pour analyser les fréquences..."></textarea>
+            <div style="margin-bottom: 15px;">
+                <label for="fileInput" style="display: block; margin-bottom: 5px; color: #dbeafe;">Ou importez un fichier .txt :</label>
+                <input type="file" id="fileInput" accept=".txt" style="color: white;">
+            </div>
+            <button id="submit">Générer le Nuage</button>
+        </form>
+
+        <h3>Nuage de Mots</h3>
+        
+        <div id="cloud">
+            <p>Le nuage s'affichera ici après l'analyse.</p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,103 @@
+/* Reset minimal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Formulaire */
+form {
+    width: 100%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Zone de texte */
+textarea {
+    width: 100%;
+    min-height: 180px;
+    resize: vertical;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: #ffffff;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Zone d'ajout de fichier .txt */
+input[type="file"] {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Bouton de génération */
+button {
+    display: block;
+    margin-left: auto;
+    padding: 12px 26px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
+
+/* Nuage de mots */
+#cloud {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+/* Mots générés */
+.word {
+    position: absolute;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 1;
+    transform: translate(-50%, -50%); /* Pour centrer le mot sur ses coordonnées x,y */
+}
+
+.word:hover {
+    color: #2563eb;
+    transform: scale(1.15);
+}
